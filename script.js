@@ -32,3 +32,17 @@ document.querySelector("button").addEventListener("click", function () {
 
   document.querySelector("body").insertAdjacentHTML("beforeend", template);
 });
+const btnList = document.querySelectorAll(".buttonClass:not(#btn5)");
+const btnClick = document.getElementById("btn5");
+
+btnClick.addEventListener("click", function () {
+  var tmp = btnList[0].textContent;
+  btnList[0] = btnList[3];
+  btnList[3] = btnList[5];
+  btnList[5] = btnList[6];
+  btnList[6] = btnList[7];
+  btnList[7] = btnList[4];
+  btnList[4] = btnList[2];
+  btnList[2] = btnList[1];
+  btnList[1] = tmp;
+});
