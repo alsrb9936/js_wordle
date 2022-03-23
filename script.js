@@ -1,4 +1,4 @@
-var 답안 = "abcde";
+var 답안 = "truck";
 
 document.querySelector("button").addEventListener("click", function () {
   var input = document.querySelectorAll(".input");
